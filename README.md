@@ -15,17 +15,20 @@ To separate header from body you have to write : **===**
 
 **INPUT**
 
+```
 | Row Header 1 |
 | Row Header 2  Col 1 | Row Header Col 2 |
 ===
 | Row Body 1 Col 1 | Row Body 1 Col 2 |
 | Row Body 2 Body Col 1 | Row Body 2 Col 2 |
+```
 
 Select the text, right click and select the command Pandoc-table: format ( or use the command palette )
 Select the alignment, Left, Right or Center.
 
 **OUTPUT**
 
+```
 +-----------------------+------------------+
 | Row Header 1                             |
 +-----------------------+------------------+
@@ -35,6 +38,7 @@ Select the alignment, Left, Right or Center.
 +-----------------------+------------------+
 | Row Body 2 Body Col 1 | Row Body 2 Col 2 | 
 +-----------------------+------------------+
+```
 
 ![Convert table](./images/pandoc-table-format-example-1.gif)
 
@@ -44,18 +48,22 @@ You can have multiple lines inside **body cell**, just write \n where you want t
 
 **INPUT**
 
+```
 | Name | Age |
 ===
 | Jhon | 32\nYears old |
+```
 
 **OUTPUT**
 
+```
 +------+-----------+
 | Name | Age       |
 +:====:+:=========:+
 | Jhon | 32        | 
 |      | Years old | 
 +------+-----------+
+```
 
 ![Multiple line body cell](./images/pandoc-table-format-example-2.gif)
 
